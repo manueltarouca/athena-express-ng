@@ -1,8 +1,10 @@
 declare module 'athena-express' {
-    import * as aws from 'aws-sdk';
+    import { S3 } from '@aws-sdk/client-s3';
+    import { Athena } from '@aws-sdk/client-athena';
     interface ConnectionConfigInterface {
-        aws: typeof aws;
-        s3: string;
+        athena: Athena;
+        s3: S3;
+        bucket: string;
         getStats: boolean;
         db: string,
         workgroup: string,
@@ -45,9 +47,9 @@ declare module 'athena-express' {
 
     type OptionalQueryResultsInterface<T> = Partial<QueryResultsInterface<T>> & Pick<QueryResultsInterface<T>, 'QueryExecutionId'>;
     type QueryResult<T> = OptionalQueryResultsInterface<T>;
-    type QueryFunc<T> = (query: QueryObjectInterface|DirectQueryString|QueryExecutionId) => Promise<QueryResult<T>>;
+    type QueryFunc<T> = (query: QueryObjectInterface | DirectQueryString | QueryExecutionId) => Promise<QueryResult<T>>;
 
-    class AthenaExpress<T> {
+    class AthenaExpressNG<T> {
         public new: (config: Partial<ConnectionConfigInterface>) => any;
         public query: QueryFunc<T>;
         constructor(config: Partial<ConnectionConfigInterface>);
