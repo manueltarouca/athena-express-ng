@@ -1,14 +1,4 @@
-# Athena-Express: Simplifying SQL queries on Amazon Athena
-
-[![NPM](https://nodei.co/npm/athena-express.png?compact=true)](https://nodei.co/npm/athena-express/)
-
-[![Build Status](https://travis-ci.org/ghdna/athena-express.svg?branch=master)](https://travis-ci.org/ghdna/athena-express)
-[![Package Quality](http://npm.packagequality.com/shield/athena-express.png)](http://packagequality.com/#?package=athena-express)
-[![Code Climate](https://codeclimate.com/github/ghdna/athena-express/badges/gpa.svg)](https://codeclimate.com/github/ghdna/athena-express/)
-[![Coverage Status](https://coveralls.io/repos/github/ghdna/athena-express/badge.svg?branch=master)](https://coveralls.io/github/ghdna/athena-express?branch=master)
-[![Downloads](https://img.shields.io/npm/dt/athena-express.svg)](https://www.npmjs.com/package/athena-express)
-
-###### _As published on the official [AWS Partner Network Blog](https://aws.amazon.com/blogs/apn/using-athena-express-to-simplify-sql-queries-on-amazon-athena/)_
+# AthenaExpressNG: Simplifying SQL queries on Amazon Athena
 
 ## Synopsis
 
@@ -390,6 +380,8 @@ console.log(results);
 ## Contributors
 
 [Gary Arora](https://twitter.com/AroraGary)
+
+[Manuel Tarouca](https://github.com/manueltarouca)
 
 ## License
 
