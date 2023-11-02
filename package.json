@@ -1,6 +1,6 @@
 {
   "name": "athena-express-ng",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "AthenaExpressNG makes it easier to execute SQL queries on Amazon Athena by consolidating & astracting several methods in the AWS SDK V3",
   "main": "./lib/index.js",
   "types": "./index.d.ts",
