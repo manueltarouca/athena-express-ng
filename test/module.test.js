@@ -2,8 +2,7 @@
 
 const chai = require("chai"),
 	expect = chai.expect,
-	AthenaExpressNG = require(".."),
-	aws = require("aws-sdk");
+	AthenaExpressNG = require("..")
 
 chai.should();
 
@@ -18,7 +17,7 @@ describe("Negative Scenarios", () => {
 			const athenaExpress = new AthenaExpressNG({});
 		}).to.throw(
 			TypeError,
-			"AWS object not present or incorrect in the constructor"
+			"athena, s3 are required in the config object"
 		);
 	});
 });
